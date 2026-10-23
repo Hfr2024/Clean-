@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MobileLifeHub</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <h1>MobileLifeHub</h1>
+      <p>تنظيف، إدارة ملفات، وتسريع الهاتف من مكان واحد</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>تنظيف الهاتف</h2>
+        <p id="storageInfo">جارٍ التحميل...</p>
+        <button id="scanBtn">فحص الملفات الكبيرة</button>
+        <ul id="largeFiles"></ul>
+      </article>
+
+      <article class="card">
+        <h2>إدارة الملفات</h2>
+        <input id="fileInput" type="file" multiple />
+        <ul id="fileList"></ul>
+      </article>
+
+      <article class="card">
+        <h2>تسريع الهاتف</h2>
+        <p>نصائح لتحسين الأداء وتقليل الاستهلاك</p>
+        <button id="tipsBtn">عرض النصائح</button>
+        <div id="tipsBox" class="tips"></div>
+      </article>
+
+      <article class="card">
+        <h2>ملاحظات سريعة</h2>
+        <input id="noteInput" type="text" placeholder="اكتب ملاحظة..." />
+        <button id="saveNoteBtn">حفظ</button>
+        <ul id="notesList"></ul>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

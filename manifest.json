@@ -1,0 +1,9 @@
+{
+  "name": "MobileLifeHub",
+  "short_name": "MLH",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#081421",
+  "theme_color": "#21c7a8",
+  "icons": []
+}
